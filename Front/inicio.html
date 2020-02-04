@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web Facturas</title>
+        
+        <!-- css  -->
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <!-- jquery  -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+
+        <!-- js  -->
+        <script src="js/datos.js"></script>
+        <script>
+        window.addEventListener('load',function(){
+            ocultarBoton();
+            subirFoto();
+            // leerCsv();//este tiene que ir dentro de la funcin que sube el archivo
+            //pero apra hacer pruebas lo dejo aqui
+    
+        });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Convertidor de archivo a facturas</h1>
+        </header>
+
+        <section>
+                   
+            <div id="divFile">
+                <form id="formFoto" action="" method="" enctype="multipart/form-data">
+                    <input type="file" name="archivo" id="archivo">
+                    <br>
+                    <br>
+                    <input type="submit" value="Subir">
+                </form>                
+            </div>
+                       
+            <!-- <a href="imagenes/tokyo.jpg" download="imagenes/tokyo.jpg">Descargar imagen</a> -->
+
+            <div id="divTabla">
+                
+            </div>
+            <div>
+                <input type='button' id='botonRedireccion' value='Ver pdf'>
+            </div>
+        </section>
+        
+        <footer>
+            <h3>&copy;CrisLaez</h3>
+        </footer>
+        
+       
+    </body>
+</html>
